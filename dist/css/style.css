@@ -1,0 +1,121 @@
+/*
+Theme Name: Nevergreen
+Theme URI: 
+Author: Tim Schorr
+Author URI: https://wildnine.net
+Description: A Wordpress theme using Bootstrap 4.1.3
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nevergreen
+Tags: 
+*/
+p {
+  margin-bottom: 1.5rem; }
+
+embed, img, iframe, object, video {
+  max-width: 100%;
+  height: auto; }
+
+#content {
+  min-height: 70vh; }
+
+#siteTitle {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem; }
+
+/*If admin bar is showing, push fixed header down*/
+.top-fix {
+  top: 32px; }
+
+.pad-fix {
+  padding-top: 56px; }
+
+/**** Sections ****/
+.jumbotron {
+  height: 100vh;
+  color: white;
+  background-color: #4a3868;
+  background-image: url(imgs/jumbobg02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0; }
+
+.break-out {
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2); }
+
+#sectionNewsLetter {
+  background-color: #4a3868;
+  background-image: url(imgs/poly-repeat.gif);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; }
+
+#sectionNewsLetter .row {
+  height: 200px; }
+
+#footer {
+  background-color: #443460;
+  padding-top: 2rem;
+  color: white; }
+
+/**** Navigation ****/
+.nav-list-item a {
+  color: #8067ad;
+  display: block;
+  width: 100%;
+  line-height: 2.6rem;
+  text-decoration: none;
+  border-bottom: 1px dotted #674f92;
+  transition: all 0.2s ease; }
+
+.nav-list-item a:hover {
+  color: white;
+  border-bottom: 1px dotted #5b4681;
+  background-color: #493867;
+  padding-left: 1px; }
+
+.navbar {
+  background-color: rgba(68, 52, 96, 0);
+  transition: all 0.2s ease-in-out; }
+
+.navbar-solid {
+  background-color: #443460; }
+
+.navbar-nav .nav-link {
+  transition: all 0.2s ease; }
+
+.navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  background-color: #4d3b6d; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #7358a2; }
+
+.nav-list-item:first-child a {
+  border-top: 1px dotted #674f92; }
+
+.nav-list dd {
+  margin-bottom: 0; }
+
+/**** Media Queries ****/
+@media (min-width: 992px) {
+  .navbar li {
+    margin-left: .8em;
+    margin-right: .8em; } }
+
+/**** Blog Styles ****/
+.blog-post {
+  border-bottom: 1px dotted #c5bad9; }
+
+.wp-caption, .gallery-caption {
+  margin-bottom: 1.5rem;
+  max-width: 100%; }
