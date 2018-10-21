@@ -95,11 +95,11 @@ function nevergreen_widgets() {
 }
 add_action( 'widgets_init', 'nevergreen_widgets' );
 
-/**** Bootstrap Navwalker File. ****/
+/**** Bootstrap Navwalker file ****/
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
 
-if ( ! function_exists( 'nevergreen_post_thumbnail' ) ) :
+if ( ! function_exists( 'nevergreen_post_thumbnail' ) )  {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
@@ -111,14 +111,14 @@ if ( ! function_exists( 'nevergreen_post_thumbnail' ) ) :
 			return;
 		}
 
-		if ( is_singular() ) :
+		if ( is_singular() ) {
 			?>
 
 			<div class="post-thumbnail">
 				<?php the_post_thumbnail(); ?>
 			</div><!-- .post-thumbnail -->
 
-		<?php else : ?>
+		<?php } else { ?>
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
@@ -131,6 +131,6 @@ if ( ! function_exists( 'nevergreen_post_thumbnail' ) ) :
 		</a>
 
 		<?php
-		endif; // End is_singular().
+		} // End is_singular().
 	}
-endif;
+}
