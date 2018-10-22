@@ -119,3 +119,31 @@ embed, img, iframe, object, video {
 .wp-caption, .gallery-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
+
+.gallery .row {
+  margin-bottom: 30px; }
+
+/**** Enable built-in image alignment ****/
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
