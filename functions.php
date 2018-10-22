@@ -98,6 +98,8 @@ add_action( 'widgets_init', 'nevergreen_widgets' );
 /**** Bootstrap Navwalker file ****/
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
+/**** Bootstrap gallery ****/
+require get_template_directory() . '/inc/bootstrap-gallery.php';
 
 if ( ! function_exists( 'nevergreen_post_thumbnail' ) )  {
 	/**
